@@ -1,0 +1,140 @@
+/* ? This file contains global CSS styles that apply to the entire application. It 
+allows you to define styles that should be applied globally, affecting all components within the app */ 
+/* base rule */ 
+
+@import "tailwindcss";
+ * { 
+margin: 0; 
+padding: 0; 
+box-sizing: border-box; 
+font-family: "Urbanist", sans-serif; 
+ } 
+@theme {
+  --color-regal-black:black; 
+}
+ 
+ 
+html { 
+font-size: 62.5%; 
+ } 
+ 
+h1, h2, h3, h4, h5,h6 { 
+ color: var(--heading-color); 
+font-family: "Poppins", sans-serif; 
+font-weight: 900; 
+ } 
+ 
+ h1 { 
+font-size: 3.2rem; 
+ } 
+ 
+ p,li,a,label{ 
+font-size: 1.8rem; 
+letter-spacing: 0.1rem; color: var(--para-color); line-height: 1.5; 
+font-weight: 400; 
+ } 
+ 
+ li { 
+list-style: none; 
+ } 
+ 
+ a { 
+text-decoration: none; 
+ } 
+ 
+ 
+/* theme */ 
+ 
+:root { 
+--main-color: #0de839; 
+--supporting-color:#ebf3fe; 
+--heading-color: #000a19; 
+--h-color: #0a043c; 
+--font-color: #424242
+--bg-color:#ffffff;
+--test:#070101; 
+--white-color: #ffffff; 
+--para-color: #504e4d; 
+--bnt-hover-bg-color:#003b99; 
+--btn-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+
+/*layout */  
+.container { 
+margin: 0 auto;  
+max-width: 142rem; 
+padding: 9.6rem 2.4rem;
+} 
+
+/* .grid { 
+  display: grid; 
+  gap: 9.6rem; 
+}  
+
+.grid-two-cols { 
+grid-template-columns: repeat (2, 1fr); 
+}
+.grid-three--cols { 
+grid-template-columns: repeat(3, 1fr); 
+} */
+
+/* toggle-button  */
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-switch {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.switch {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: transform 0.3s linear, background-color 0.3s linear;
+  border: 0.2rem solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.on {
+  background-color: #4caf50;
+  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -o-transform: translateX(50px);
+}
+
+.off {
+  background-color: #f44336;
+  transform: translateX(0);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
+
+.switch-state {
+  margin: 0 10px;
+  text-transform: uppercase;
+}
