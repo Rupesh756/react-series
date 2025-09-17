@@ -1,4 +1,4 @@
-import ContactForm from "./components/project/ContactForm";
+import ReactUseEffect from "./components/hooks/useEffect";
 
 export const App = () => {
   return (
@@ -11,7 +11,8 @@ export const App = () => {
        {/* <UseStateChallenge/> */}
       {/* <LoginForm/> */}
       {/* <SignUpForm/> */}
-      <ContactForm/>
+      {/* <ContactForm/> */}
+      <ReactUseEffect/>
     </section>
   );
 };
